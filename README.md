@@ -18,15 +18,15 @@ For transfer learning, we utilized the IMAGENET dataset for model training. Sinc
 
 During model testing, we noticed that many cloudy images were misclassified as flooded images. To distinguish between clouds and floods, we researched various methods and found that ISRO (Indian Space Research Organization) used the SWIR band for cloud detection in their 2019 research paper "DEEP CONVOLUTIONAL NETWORKS FOR CLOUD DETECTION USING RESOURCESAT-2 DATA."
 
-![Image1](Images/Org_Images.png)
+![Image1](NDWI_Images.png)
 
 *Original Image with cloud and water (river)*
 
-![Image2](Images/NDWI_Images.png)
+![Image2](NDWI_Images.png)
 
 *Image after applying NDWI Index => Water and clouds are misclassified*
 
-![Image3](Images/NEW_INDEX_Images.png)
+![Image3](NEW_INDEX_Images.png)
 
 *Image after applying New Index (Combination of Blue, Green, NIR, SWIR) => Water and clouds are properly classified*
 
@@ -45,6 +45,6 @@ To leverage the information from all four bands (BLUE, GREEN, NIR, and SWIR), we
 
 Through our innovative approach, we achieved an impressive accuracy of 97% in flood event detection. This accuracy demonstrates the potential of our model for real-world flood monitoring applications.
 
-![Image3](Images/resnet152_tl_resnet152(97).png)
+![Image3](resnet152_tl_resnet152(97).png)
 
 *Final Result Displayed Using Confusion Matrix*
